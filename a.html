@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: yellow;
+        }
+        .all{
+            display:flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+        }
+       
+        .one{
+             width:100px;
+             height:100px;
+             background-color:rgb(23, 190, 23);
+             transition: width 1s;
+        }
+        .one:hover{
+            width:300px;
+        }
+       
+        .two{
+            width:100px;
+             height:100px;
+             background-color:rgb(23, 190, 23);
+             transition: all 2s;
+        }
+        .two:hover{
+            height:300px;
+            width:300px;
+        }
+        .three{
+            width:100px;
+             height:100px;
+             background-color:rgb(23, 190, 23);
+             transition: all 2s;
+             
+        }
+        .three:hover{
+           
+            width:350px;
+            transition-timing-function: linear;
+        }
+        .four{
+            width:100px;
+             height:100px;
+             background-color:rgb(23, 190, 23);
+             transition: all 2s;
+        }
+        .four:hover{
+           
+            width:400px;
+            transition-timing-function: ease;
+        }
+        .five{
+            width:100px;
+             height:100px;
+             background-color:rgb(23, 190, 23);
+             transition: all 2s;
+        }
+        .five:hover{
+           
+            width:450px;
+            transition-timing-function: ease-in;
+        }
+        .six{
+            width:100px;
+             height:100px;
+             background-color:rgb(23, 190, 23);
+             transition: all 2s;
+        }
+        .six:hover{
+           
+            width:500px;
+            transition-timing-function: ease-out;
+        }
+        .seven{
+            width:100px;
+             height:100px;
+             background-color:rgb(23, 190, 23);
+             transition: all 2s;
+        }
+        .seven:hover{
+           
+            width:550px;
+            transition-timing-function: ease-in-out;
+        }
+        .firstt{
+            
+            text-align:center;
+            color:black;
+           
+            font-weight: bold;
+            font-size:22px;
+        
+        }
+        .btn a{
+            color:maroon;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="firstt">Try to replicate this</div>
+    <div class="all">
+    <div class="first">
+    <div>1.</div>
+    <div class="one"></div>
+    </div>
+    <div class="second">
+        <div>2.</div>
+        <div class="two"></div>
+        </div>
+        <div class="third">
+            <div>3.</div>
+            <div class="three"></div>
+            </div>
+            <div class="fourth">
+                <div>4.</div>
+                <div class="four"></div>
+                </div>
+                <div class="fifth">
+                    <div>5.</div>
+                    <div class="five"></div>
+                    </div>
+                    <div class="sixth">
+                        <div>6.</div>
+                        <div class="six"></div>
+                        </div>
+                        <div class="seventh">
+                            <div>7.</div>
+                            <div class="seven"></div>
+                            </div>
+                            <div class="btn"><a href="index.html">Back</a></div>
+                                <div><a href="b.html">Next</a></div>
+    </div>
+</body>
+</html>

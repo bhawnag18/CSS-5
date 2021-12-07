@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+
+            margin:0;
+            padding:0;
+        }
+        .sky{
+            width:100%;
+            overflow-x:hidden;
+            height:100vh;
+            background-image: url("sky.jpg");
+            background-size: cover;
+            overflow-x: hidden;
+            background-position: center;
+            position:relative;
+            animation:sky 3000s linear alternate;
+        }
+
+        @keyframes sky{
+           100%{
+
+           transform : translateX(4px);
+           }
+        }
+        .foot{
+            width:500%;
+            height:200px;
+            display: block;
+            background-image: url("road.jpg");
+            position:absolute;
+            bottom:0px;
+            left:0px;
+            right:0;
+            z-index:1;
+            animation:highway 5s linear infinite;
+        }
+        @keyframes highway{
+           100%{
+
+           transform : translateX(-6400px);
+           }
+        }
+        .city{
+            position:absolute;
+            background-image: url("city.png");
+            height:250px;
+            width:500%;
+            bottom:200px;
+            left:0;
+            right:0;
+            z-index:1;
+            display:block;
+            animation:city 20s linear infinite;
+
+        }
+        @keyframes city{
+100%{
+    transform:translate(-3400px);
+}
+        }
+        .car{
+            width:400px;
+            position: absolute;
+            left:50%;
+            bottom:100px;
+            transform:translate(-50%);
+            z-index: 2;
+        }
+        .car img{
+            width:100%;
+            animation:car 1s linear infinite;
+        }
+        @keyframes car{
+            0%{
+                transform: translateY(-1px);
+            }
+            50%{
+                transform: translateY(-1px);
+            }
+            100%{
+                transform: translateY(-1px);
+            }
+        }
+        .wheel{
+            left:50%;
+            bottom:182px;
+            transform:translate(-50%);
+            z-index: 2;
+            position:absolute;
+        }
+        .wheel img{
+            width:72px;
+            height:72px;
+            animation:wheel 1s linear infinite;
+        }
+        .back-wheel{
+            left:-165px;
+            position:absolute;
+            
+        }
+        .front-wheel{
+            left:80px;
+            position:absolute;
+        }
+        @keyframes wheel{
+         
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .sun{
+            position: absolute;
+            left:80%;
+            top:10%;
+            
+        }
+        .sun img{
+            position:absolute;
+            height:120px;
+            z-index:1;
+        }
+        .flag{
+            
+        }
+        .flag img{
+
+        }
+        .top{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content: center;
+           
+        }
+        .top2{
+            background-color:orangered;
+            color:black;
+            margin:5px;
+            width:94px;
+            height:25px;
+            font-size:25px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        .top3{
+ background-color: white;
+ color:black;
+ margin:5px;
+ font-size:25px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            width:230px;
+            height:25px;
+
+        }
+        .top4{
+            background-color: green;
+            color:color;
+            margin:5px;
+            width:59px;
+            height:25px;
+            font-size:25px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sky">
+        <div class="top">
+            <div class="top1 top2">HAPPY</div>
+            <div class="top1 top3">INDEPENDENCE</div>
+            <div class="top1 top4">DAY</div>
+        </div>
+        <div class="foot"></div>
+        <div class="city"></div>
+        <div class="car"><img src="car.png"></div>
+        <div class="wheel">
+            <img src="wheel.png" class="back-wheel">
+            <img src="wheel.png" class="front-wheel">
+        </div>
+        <div class="sun"><img src="https://freepngimg.com/thumb/sun/4-2-sun-png-picture.png"></div>
+        <div class="flag"><img src=""></div>
+ </div>
+</body>
+</html>
